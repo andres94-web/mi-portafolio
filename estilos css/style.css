@@ -1,0 +1,460 @@
+/* ========================================= barra de navegacion ================================== */
+header {
+  top: 0;
+  position: fixed;
+}
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.logo {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  animation: myAnimNav 2s ease 0s 1 normal none;
+}
+@keyframes myAnimNav {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.logo:hover {
+  color: #fff;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  list-style: none;
+  padding: 10px;
+}
+.menu li .botonBlanco {
+  font-size: 10px;
+  border: solid 1px;
+  border-radius: 42px;
+  padding: 3px 5px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menu li .botonBlanco:hover {
+  border: solid 1px #000;
+  color: #fff;
+  background: #000;
+}
+.menu li .botonNegro {
+  font-size: 10px;
+  background: #000;
+  border: solid 1px #000;
+  border-radius: 42px;
+  padding: 3px 5px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.menu li .botonNegro:hover {
+  border: solid 1px #000;
+  color: #000;
+  background: none;
+}
+/* ========================================= seccion de presentacion =============================== */
+.cuerpo {
+  padding-top: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../imagenes/studio-proper-4dqhR6dtbOs-unsplash.jpg);
+  height: 1139px;
+  background-size: cover;
+}
+.contenedorTitulo {
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.contenedorTitulo h1 {
+  padding-bottom: 15px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.tituloDelProgramador {
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: colors 8s reverse;
+  color: #fff;
+}
+.nombreDelProgramador {
+  padding-top: 5px;
+  letter-spacing: -2px;
+  color: #fff;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.nombreDelProgramador span {
+  animation: colors 8s;
+}
+@keyframes colors {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: red;
+  }
+  20% {
+    color: #000;
+  }
+  30% {
+    color: hotpink;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  60% {
+    color: red;
+  }
+  70% {
+    color: blue;
+  }
+  80% {
+    color: hotpink;
+  }
+  90% {
+    color: yellow;
+  }
+  100% {
+    color: green;
+  }
+}
+.cuerpo .sobreMI {
+  padding-top: 15px;
+  color: #fff;
+  animation: myAnimP 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnimP {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ========================================= seccion de proyectos =============================== */
+.proyectos {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.textTheProyec {
+  padding-top: 15px;
+  padding-bottom: 50px;
+  font-display: flex;
+  margin: auto;
+  color: #fff;
+}
+.textTheProyec h3 {
+  padding-bottom: 15px;
+  letter-spacing: -2px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+.textTheProyec p {
+  animation: myAnimP 1s ease 0s 1 normal forwards;
+}
+.proyectos .proyecto {
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+}
+.proyecto {
+  display: flex;
+  flex-direction: column;
+}
+.proyecto img {
+  box-shadow: 0px 0px 25px 10px #000000;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.nameProyect {
+  padding-top: 7px;
+  text-align: center;
+  font-weight: 600;
+}
+.proyecto:hover {
+  color: #fff;
+  padding: 1.5px;
+  transition: all 0.5s ease;
+}
+.ContenedorProyectos1 {
+  padding-bottom: 25px;
+}
+/* ========================================= seccion de contacto =============================== */
+.contact {
+  margin-top: 40px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-around;
+  height: 155px;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../imagenes/michal-kubalczyk-WecngmAT-KY-unsplash.jpg);
+  background-size: cover;
+  animation: myAnimBac 10s infinite forwards;
+}
+@keyframes myAnimBac {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 50% 100%;
+  }
+}
+.contactMe {
+  height: 100px;
+}
+form label {
+  font-size: 10px;
+  color: #fff;
+}
+form input {
+  background: none;
+  height: 12px;
+  width: 80%;
+  font-size: 9px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+textarea {
+  background: none;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+.myButton {
+  background: rgb(227, 236, 0);
+  background: linear-gradient(
+    81deg,
+    rgba(227, 236, 0, 1) 0%,
+    rgba(215, 0, 0, 1) 23%,
+    rgba(0, 0, 0, 1) 87%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(86, 37, 87, 1) 100%
+  );
+  text-decoration: none;
+  color: #000;
+  border-radius: 42px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0px 20px;
+  cursor: pointer;
+  animation: myAnimBoton 2s ease 0s infinite normal forwards;
+}
+@keyframes myAnimBoton {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.myButton:hover {
+  color: #fff;
+}
+.contactPicture {
+  list-style: none;
+}
+.contactNetwork {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  cursor: pointer;
+}
+.contactNetwork:hover {
+  color: #000;
+}
+.contactPicture img {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+/* ========================================= @media querys ====================================== */
+@media (max-width: 240px) {
+  .cuerpo {
+    height: 2400px;
+  }
+  .contact {
+    height: 230px;
+  }
+  .contactMe {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 280px) and (max-width: 360px) {
+  .cuerpo {
+    height: 1820px;
+  }
+  .contact {
+    height: 210px;
+  }
+  .contactMe {
+    height: 100px;
+    margin-bottom: 60px;
+  }
+  form input {
+    width: 95%;
+  }
+}
+@media (min-width: 375px) and (max-width: 600px) {
+  .cuerpo {
+    height: 1180px;
+  }
+  .contact {
+    height: 220px;
+  }
+  .contactMe {
+    margin-bottom: 60px;
+  }
+  form input {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 769px) {
+  .contact {
+    height: 230px;
+  }
+  .contactMe {
+    margin-bottom: 60px;
+  }
+  form input {
+    width: 95%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1025px) {
+  .tituloDelProgramador {
+    margin-top: 30px;
+  }
+  .textTheProyec {
+    margin-top: 30px;
+  }
+  .ContenedorProyectos1 {
+    margin-top: 15px;
+  }
+  .contact {
+    height: 237px;
+  }
+  form input {
+    width: 90%;
+  }
+}
+@media (min-width: 800px) and (max-width: 801px) {
+  .tituloDelProgramador {
+    margin-top: 30px;
+  }
+  .contact {
+    height: 220px;
+  }
+  form input {
+    width: 95%;
+  }
+}

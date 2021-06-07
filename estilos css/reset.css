@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    cursor: alias;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.row-1{
+    width: 8.33%;
+}
+
+.row-2{
+    width: 16.66%;
+}
+
+.row-3{
+    width: 25%;
+}
+
+.row-4{
+    width: 33.33%;
+}
+
+.row-5{
+    width: 41.66%;
+}
+
+.row-6{
+    width: 50%;
+}
+
+.row-7{
+    width: 58.33%;
+}
+
+.row-8{
+    width: 66.66%;
+}
+
+.row-9{
+    width: 75%;
+}
+
+.row-10{
+    width: 83.33%;
+}
+
+.row-11{
+    width: 91.66%;
+}
+
+.row-12{
+    width: 100%;
+}
+
